@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color1: #0b0223;
+  --text-color2: #534c64;
+  --text-color3: #3c354f;
+  --title-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --bg-color1: rgba(11, 2, 35, 0.1);
+  --bg-color2: #4ec5f7;
+  --btn-color: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+h1 {
+  font-size: 5.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Common class */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.letter-color {
+  background: -webkit-linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.word-color {
+  background: -webkit-linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navbar Section */
+
+.nav-section {
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.nav-menus {
+  display: flex;
+  list-style: none;
+  padding: 0px 20px;
+  color: var(--text-color3);
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-items {
+  background-color: var(--bg-color1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: var(--text-color3);
+  font-size: 1.12rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.menu-items {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.fa-youtube,
+.fa-tiktok {
+  font-size: 1.8rem;
+}
+.fa-youtube {
+  color: rgb(222, 10, 10);
+}
+
+/* mobile devices */
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .nav-section {
+    box-shadow: none;
+  }
+  .logo {
+    margin: 10px 0px;
+  }
+  .menu-items {
+    padding: 10px 0px 15px 0px;
+    font-size: 0.9rem;
+  }
+  .nav-items,
+  .fa-youtube,
+  .fa-tiktok {
+    padding: 3px 10px;
+    font-size: 0.9rem;
+  }
+  .logo h2 {
+    font-size: 1.8rem;
+  }
+  .logo img {
+    width: 60px;
+    height: 30px;
+  }
+  .nav-container {
+    flex-direction: column;
+    padding: 25px 0px;
+  }
+  .nav-links,
+  .nav-menus {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet or laptop devices */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo h2 {
+    font-size: 1.1rem;
+  }
+  .logo img {
+    width: 50px;
+    height: 26px;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  .menu-items {
+    font-size: 0.9rem;
+  }
+  .nav-items,
+  .fa-youtube,
+  .fa-tiktok {
+    padding: 3px 3px;
+    margin-right: 10px;
+  }
+}
