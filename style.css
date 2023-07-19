@@ -235,6 +235,36 @@ h1 {
   left: 550px;
 }
 
+/* Games items section */
+
+.games-items-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+  gap: 50px;
+}
+.games-package{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.games-package p{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color1);
+}
+.games-package:hover {
+  border: 1px solid #ff42a5;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 5px;
+}
+.games-package p:hover{
+  color: #ff42a5;
+}
+
 /* mobile devices */
 
 @media screen and (max-width: 767px) {
