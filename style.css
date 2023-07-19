@@ -28,7 +28,7 @@ h1 {
 /* Common class */
 
 .container {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .letter-color {
@@ -177,6 +177,64 @@ h1 {
   line-height: 45px;
 }
 
+/* Online Games Section */
+
+.online-section{
+  margin-bottom: 10vh;
+}
+.online-caption{
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.online-caption h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+.online-caption p{
+  color: var(--text-color2);
+  padding: 15px;
+}
+
+.online-card-container{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.online-card p{
+  width: 342px;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--text-color2);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* play games section */
+
+.play-section{
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.play-contents h2{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+.play-contents p{
+  color: var(--text-color2);
+  padding: 15px;
+  font-size: 1.1rem;
+}
+.bottom-img{
+  position: relative;
+  bottom: 200px;
+  left: 550px;
+}
+
 /* mobile devices */
 
 @media screen and (max-width: 767px) {
@@ -267,7 +325,59 @@ h1 {
   .bold-text {
     font-size: 1rem;
   }
+
+
+
+  .online-card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .online-caption h2 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .online-caption p{
+    font-size: 0.8rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .online-card p{
+    font-size: 0.9rem;
+  }
+
+
+
+  .play-section{
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-top: 15vh;
+  }
+  .play-contents{
+    text-align: center;
+    width: 85%;
+  }
+  .play-contents h2{
+    font-size: 2rem;
+  }
+  .play-contents p{
+    font-size: 0.9rem;
+  }
+  .play-img{
+    width: 80%;
+  }
+  .bottom-img{
+    width: 200px;
+    left: 200px;
+    bottom: 100px;
+  }
+  .play-images{
+   max-width: 400px;
+   margin: 0 auto;
+  }
 }
+
+
 
 /* Tablet or laptop devices */
 
@@ -331,6 +441,7 @@ h1 {
   }
 
 
+
   .gamer-section {
     flex-direction: column;
     text-align: center;
@@ -355,4 +466,40 @@ h1 {
   .bold-text {
     font-size: 1rem;
   }
+
+
+
+  .online-card-container{
+    flex-wrap: wrap;
+  }
+  .online-caption h2 {
+    font-size: 2rem;
+  }
+
+
+  .play-section{
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-top: 15vh;
+  }
+  .play-contents{
+    text-align: center;
+    width: 75%;
+  }
+  .play-contents h2{
+    font-size: 2rem;
+  }
+  .play-contents p{
+    font-size: 0.9rem;
+  }
+  .play-img{
+    width: 80%;
+  }
+  .bottom-img{
+    left: 400px;
+  }
+  .play-images{
+    max-width: 700px;
+    margin: 0 auto;
+   }
 }
