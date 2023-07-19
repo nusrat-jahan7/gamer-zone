@@ -99,9 +99,52 @@ h1 {
   color: rgb(222, 10, 10);
 }
 
+/* Banner Section Started */
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5vh;
+  background-image: url("images/Group\ 14.png");
+  background-repeat: no-repeat;
+}
+.banner-title {
+  color: var(--text-color1);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-details {
+  color: var(--text-color2);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin: 15px 0px 25px 0px;
+}
+.banner-details p {
+  padding: 15px 0px;
+}
+.btn {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 48px;
+  margin: 5px 15px 5px 0px;
+  border: none;
+}
+.btn-primary{
+  background: -webkit-linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.btn-info{
+  background-color: var(--bg-color2);
+}
+
 /* mobile devices */
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .nav-section {
     box-shadow: none;
   }
@@ -134,11 +177,41 @@ h1 {
     flex-direction: column;
     text-align: center;
   }
+
+
+  .banner-section {
+    flex-direction: column-reverse;
+    gap: 40px;
+    background-image: none;
+  }
+  .banner-img{
+    width: 350px;
+    height: auto;
+    margin:0 auto;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .banner-details {
+    font-size: 0.8rem;
+    margin: 5px 0px 15px 0px;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    margin: 0px 10px 0px 0px;
+  }
 }
 
 /* Tablet or laptop devices */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-container{
+    justify-content: space-around;
+  }
   .logo h2 {
     font-size: 1.1rem;
   }
@@ -146,7 +219,7 @@ h1 {
     width: 50px;
     height: 26px;
   }
-  .logo{
+  .logo {
     margin-left: 15px;
   }
   .menu-items {
@@ -157,5 +230,39 @@ h1 {
   .fa-tiktok {
     padding: 3px 3px;
     margin-right: 10px;
+  }
+
+
+  .banner-section{
+    max-width: 700px;
+    height: auto;
+    background-image: none;
+    margin: 0 auto;
+  }
+  .banner-img{
+    width: 380px;
+    height: auto;
+    margin:0 auto;
+  }
+  .banner-title {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  .banner-contents{
+    width: 60%;
+  }
+  .banner-details {
+    font-size: 0.8rem;
+    margin: 5px 0px 15px 0px;
+  }
+  .banner-details p {
+    padding: 5px 0px;
+  }
+  .btn {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    margin: 0px 10px 0px 0px;
   }
 }
