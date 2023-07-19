@@ -179,10 +179,10 @@ h1 {
 
 /* Online Games Section */
 
-.online-section{
+.online-section {
   margin-bottom: 10vh;
 }
-.online-caption{
+.online-caption {
   text-align: center;
   margin-bottom: 5vh;
 }
@@ -191,17 +191,17 @@ h1 {
   font-weight: 700;
   color: var(--text-color1);
 }
-.online-caption p{
+.online-caption p {
   color: var(--text-color2);
   padding: 15px;
 }
 
-.online-card-container{
+.online-card-container {
   display: flex;
   justify-content: center;
   gap: 25px;
 }
-.online-card p{
+.online-card p {
   width: 342px;
   text-align: center;
   padding-top: 10px;
@@ -212,24 +212,24 @@ h1 {
 
 /* play games section */
 
-.play-section{
+.play-section {
   display: flex;
   align-items: center;
   gap: 250px;
   max-width: 1500px;
   margin: 0 auto;
 }
-.play-contents h2{
+.play-contents h2 {
   font-size: 3rem;
   font-weight: 700;
   color: var(--text-color1);
 }
-.play-contents p{
+.play-contents p {
   color: var(--text-color2);
   padding: 15px;
   font-size: 1.1rem;
 }
-.bottom-img{
+.bottom-img {
   position: relative;
   bottom: 200px;
   left: 550px;
@@ -237,7 +237,7 @@ h1 {
 
 /* Games items section */
 
-.games-items-container{
+.games-items-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -245,12 +245,12 @@ h1 {
   margin: 0 auto;
   gap: 50px;
 }
-.games-package{
+.games-package {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.games-package p{
+.games-package p {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-color1);
@@ -261,8 +261,53 @@ h1 {
   cursor: pointer;
   padding: 5px;
 }
-.games-package p:hover{
+.games-package p:hover {
   color: #ff42a5;
+}
+
+/* Footer Section */
+
+.footer-container {
+  background-color: var(--text-color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  padding: 10vh 0vh;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.footer-items {
+  display: flex;
+  justify-content: center;
+  padding: 56px;
+  gap: 60px;
+}
+.footer-items p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.social-icon,
+.policy-footer {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0px;
+  gap: 60px;
+}
+.fa-brands {
+  color: #fff;
+  font-size: 2rem;
+}
+.policy-footer p,
+.copyright {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 /* mobile devices */
@@ -301,8 +346,6 @@ h1 {
     text-align: center;
   }
 
-
-
   .banner-section {
     flex-direction: column-reverse;
     gap: 40px;
@@ -329,13 +372,11 @@ h1 {
     margin: 0px 10px 0px 0px;
   }
 
-
-
   .gamer-section {
     flex-direction: column;
     text-align: center;
   }
-  .gamer-img{
+  .gamer-img {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -356,58 +397,109 @@ h1 {
     font-size: 1rem;
   }
 
-
-
-  .online-card-container{
+  .online-card-container {
     flex-direction: column;
     align-items: center;
   }
   .online-caption h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 80%;
     margin: 0 auto;
   }
-  .online-caption p{
+  .online-caption p {
     font-size: 0.8rem;
     width: 85%;
     margin: 0 auto;
   }
-  .online-card p{
+  .online-card p {
     font-size: 0.9rem;
   }
 
-
-
-  .play-section{
+  .play-section {
     flex-direction: column-reverse;
     gap: 50px;
     margin-top: 15vh;
   }
-  .play-contents{
+  .play-contents {
     text-align: center;
     width: 85%;
   }
-  .play-contents h2{
-    font-size: 2rem;
+  .play-contents h2 {
+    font-size: 1.5rem;
   }
-  .play-contents p{
+  .play-contents p {
     font-size: 0.9rem;
   }
-  .play-img{
+  .play-img {
     width: 80%;
   }
-  .bottom-img{
+  .bottom-img {
     width: 200px;
     left: 200px;
     bottom: 100px;
   }
-  .play-images{
-   max-width: 400px;
-   margin: 0 auto;
+  .play-images {
+    max-width: 400px;
+    margin: 0 auto;
   }
+
+  .games-items-container {
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0px auto;
+    gap: 20px;
+  }
+  .games-package {
+    gap: 10px;
+    width: 100px;
+  }
+  .games-package img {
+    width: 30px;
+  }
+  .games-package p {
+    font-size: 0.6rem;
+  }
+  .games-package:hover {
+    border: 1px solid #ff42a5;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .games-package p:hover {
+    color: #ff42a5;
+  }
+
+  .footer-contents {
+    width: 300px;
+  }
+  .footer-items {
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 20px;
+  }
+  .footer-items p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .social-icon,
+.policy-footer {
+  padding: 26px 0px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
-
+.fa-brands {
+  color: #fff;
+  font-size: 1rem;
+}
+.policy-footer p,
+.copyright {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+}
 
 /* Tablet or laptop devices */
 
@@ -434,8 +526,6 @@ h1 {
     padding: 3px 3px;
     margin-right: 10px;
   }
-
-
 
   .banner-section {
     max-width: 700px;
@@ -470,13 +560,11 @@ h1 {
     margin: 0px 10px 0px 0px;
   }
 
-
-
   .gamer-section {
     flex-direction: column;
     text-align: center;
   }
-  .gamer-img{
+  .gamer-img {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -497,39 +585,66 @@ h1 {
     font-size: 1rem;
   }
 
-
-
-  .online-card-container{
+  .online-card-container {
     flex-wrap: wrap;
   }
   .online-caption h2 {
     font-size: 2rem;
   }
 
-
-  .play-section{
+  .play-section {
     flex-direction: column-reverse;
     gap: 50px;
     margin-top: 15vh;
   }
-  .play-contents{
+  .play-contents {
     text-align: center;
     width: 75%;
   }
-  .play-contents h2{
+  .play-contents h2 {
     font-size: 2rem;
   }
-  .play-contents p{
+  .play-contents p {
     font-size: 0.9rem;
   }
-  .play-img{
+  .play-img {
     width: 80%;
   }
-  .bottom-img{
+  .bottom-img {
     left: 400px;
   }
-  .play-images{
+  .play-images {
     max-width: 700px;
     margin: 0 auto;
-   }
+  }
+  .footer-contents {
+    width: 600px;
+  }
+  .footer-items {
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 20px;
+  }
+  .footer-items p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .social-icon,
+.policy-footer {
+  padding: 26px 0px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.fa-brands {
+  color: #fff;
+  font-size: 1rem;
+}
+.policy-footer p,
+.copyright {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
 }
